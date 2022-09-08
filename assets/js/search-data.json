@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Dark mode",
-            "content": ". toc: true layout: post description: image categories: [markdown] title: Proof of dark mode . .",
-            "url": "https://moonpiedumplings.github.io/fastpages-test2/2022/09/07/Dark-Mode.html",
-            "relUrl": "/2022/09/07/Dark-Mode.html",
+            "title": "fun with dictionaries",
+            "content": "f = {&quot;players&quot;:&quot;11 players on the field&quot;, &quot;lineman&quot;: &quot;The smartest players on the field&quot;, &quot;quarterback&quot;: &quot;The dude who throws the ball&quot; &quot;linebacker&quot;: &quot;They bliz a lot&quot; } print(f[input(&quot;query?&quot;)]) # This could probably be expanded more. But it doesn&#39;t include interation which the assignment requires. . The smartest players on the field . players = [] players.append({ &quot;name&quot;: &quot;Khalid Farah&quot;, &quot;weight&quot;: 195, #Weight is in pounds &quot;positions&quot;: [&quot;linebacker&quot;] }) players.append({ &quot;name&quot;: &quot;Jeffrey Fonseca&quot;, &quot;weight&quot;: 200, &quot;positions&quot;: [&quot;Offensive lineman&quot;, &quot;Defensive Lineman&quot;] }) for p in players: print(p[&quot;name&quot;], &quot; n&quot;) # technically, this is all I need to complete the assignment. However, I may do more. . Khalid Farah Jeffrey Fonseca . a = input(&quot;Which player&#39;s stats do you want?&quot;) for p in players: if p[&quot;name&quot;] == a: print(&quot;weight = &quot;,p[&quot;weight&quot;],&quot;pounds n&quot;) print(&quot;Positions played:&quot;, p[&quot;positions&quot;]) . weight = 195 pounds Positions played: [&#39;linebacker&#39;] . dict = {} dict.update({&quot;test&quot;:&quot;value&quot;}) print(dict) # finally got this working. Why was this so difficult to figure out. . {&#39;test&#39;: &#39;value&#39;} . pindex = {} for p in players: pindex.update({p[&quot;name&quot;]: p}) print(pindex) # This program creates an index for the list,to make searching faster. . {&#39;Khalid Farah&#39;: {&#39;name&#39;: &#39;Khalid Farah&#39;, &#39;weight&#39;: 195, &#39;positions&#39;: [&#39;linebacker&#39;]}, &#39;Jeffrey Fonseca&#39;: {&#39;name&#39;: &#39;Jeffrey Fonseca&#39;, &#39;weight&#39;: 200, &#39;positions&#39;: [&#39;Offensive lineman&#39;, &#39;Defensive Lineman&#39;]}} . # Right now there is no speed difference, but when working with bigger stores of info, for loops through are tedious a = input(&quot;player name?&quot;) print(&quot;weight=&quot;,pindex[a][&quot;weight&quot;],&quot;pounds n&quot;) print(&quot;positions=&quot;,pindex[a][&quot;positions&quot;]) # maybe creating dictionary of dictionaries would have been easier... . weight= 200 pounds positions= [&#39;Offensive lineman&#39;, &#39;Defensive Lineman&#39;] .",
+            "url": "https://moonpiedumplings.github.io/fastpages-test2/collegeboard/2022/09/07/Dictionaries.html",
+            "relUrl": "/collegeboard/2022/09/07/Dictionaries.html",
             "date": " • Sep 7, 2022"
         }
         
@@ -13,11 +13,11 @@
   
     
         ,"post1": {
-            "title": "fun with dictionaries",
-            "content": "f = {&quot;players&quot;:&quot;11 players on the field&quot;, &quot;lineman&quot;: &quot;The smartest players on the field&quot;, &quot;quarterback&quot;: &quot;The dude who throws the ball&quot; &quot;linebacker&quot;: &quot;They bliz a lot&quot; } print(f[input(&quot;query?&quot;)]) # This could probably be expanded more. But it doesn&#39;t include interation which the assignment requires. . The smartest players on the field . players = [] players.append({ &quot;name&quot;: &quot;Khalid Farah&quot;, &quot;weight&quot;: 195, #Weight is in pounds &quot;positions&quot;: [&quot;linebacker&quot;] }) players.append({ &quot;name&quot;: &quot;Jeffrey Fonseca&quot;, &quot;weight&quot;: 200, &quot;positions&quot;: [&quot;Offensive lineman&quot;, &quot;Defensive Lineman&quot;] }) for p in players: print(p[&quot;name&quot;], &quot; n&quot;) # technically, this is all I need to complete the assignment. However, I may do more. . Khalid Farah Jeffrey Fonseca . a = input(&quot;Which player&#39;s stats do you want?&quot;) for p in players: if p[&quot;name&quot;] == a: print(&quot;weight = &quot;,p[&quot;weight&quot;],&quot;pounds n&quot;) print(&quot;Positions played:&quot;, p[&quot;positions&quot;]) . weight = 200 pounds Positions played: [&#39;Offensive lineman&#39;, &#39;Defensive Lineman&#39;] .",
-            "url": "https://moonpiedumplings.github.io/fastpages-test2/collegeboard/2022/09/06/Dictionaries.html",
-            "relUrl": "/collegeboard/2022/09/06/Dictionaries.html",
-            "date": " • Sep 6, 2022"
+            "title": "Dark mode",
+            "content": ". toc: true layout: post description: image categories: [markdown] title: Proof of dark mode . .",
+            "url": "https://moonpiedumplings.github.io/fastpages-test2/2022/09/07/Dark-Mode.html",
+            "relUrl": "/2022/09/07/Dark-Mode.html",
+            "date": " • Sep 7, 2022"
         }
         
     

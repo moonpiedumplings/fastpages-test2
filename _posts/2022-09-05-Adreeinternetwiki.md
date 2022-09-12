@@ -1,6 +1,8 @@
+---
 - title: Adfreeinternet wiki
 - toc: true
 - author: moonpie
+---
 
 # Welcome to the AdFreeInternet Wiki.
 

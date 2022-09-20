@@ -1,6 +1,6 @@
 ---
-- toc: true
 - title: Making A Quiz In App Lab
+- toc: true
 - author: moonpie
 ---
 

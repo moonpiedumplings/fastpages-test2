@@ -1,12 +1,12 @@
 ---
-- title: Making A Quiz In App Lab
-- toc: true
-- author: moonpie
+title: Making A Quiz In App Lab
+toc: true
+author: moonpie
 ---
 
 # Making a quiz in app lab
 
-```
+```javascript
 var questions = ["How many players?"];
 var answers  = ["11"];
 var boxes = [(["13", "12", "15", "11"])];

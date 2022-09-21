@@ -1,0 +1,60 @@
+<h1 id="making-a-quiz-in-app-lab">Making a quiz in app lab</h1>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">questions</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">How many players?</span><span class="dl">"</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">answers</span>  <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">11</span><span class="dl">"</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">boxes</span> <span class="o">=</span> <span class="p">[([</span><span class="dl">"</span><span class="s2">13</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">12</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">15</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">11</span><span class="dl">"</span><span class="p">])];</span>
+<span class="kd">var</span> <span class="nx">grade</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nx">setText</span><span class="p">(</span><span class="dl">"</span><span class="s2">question</span><span class="dl">"</span><span class="p">,</span> <span class="nx">questions</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="nx">setText</span><span class="p">(</span><span class="dl">"</span><span class="s2">a0</span><span class="dl">"</span><span class="p">,</span> <span class="nx">boxes</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="nx">setText</span><span class="p">(</span><span class="dl">"</span><span class="s2">a1</span><span class="dl">"</span><span class="p">,</span> <span class="nx">boxes</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
+<span class="nx">setText</span><span class="p">(</span><span class="dl">"</span><span class="s2">a2</span><span class="dl">"</span><span class="p">,</span> <span class="nx">boxes</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]);</span>
+<span class="nx">setText</span><span class="p">(</span><span class="dl">"</span><span class="s2">a3</span><span class="dl">"</span><span class="p">,</span> <span class="nx">boxes</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">]);</span>
+<span class="nx">onEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">a0</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">getText</span><span class="p">(</span><span class="dl">"</span><span class="s2">a0</span><span class="dl">"</span><span class="p">)</span> <span class="o">==</span> <span class="nx">answers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">correct</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="nx">onEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">a1</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">getText</span><span class="p">(</span><span class="dl">"</span><span class="s2">a1</span><span class="dl">"</span><span class="p">)</span> <span class="o">==</span> <span class="nx">answers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">correct</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="nx">onEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">a2</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">getText</span><span class="p">(</span><span class="dl">"</span><span class="s2">a2</span><span class="dl">"</span><span class="p">)</span> <span class="o">==</span> <span class="nx">answers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">correct</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="nx">onEvent</span><span class="p">(</span><span class="dl">"</span><span class="s2">a3</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">getText</span><span class="p">(</span><span class="dl">"</span><span class="s2">a3</span><span class="dl">"</span><span class="p">)</span> <span class="o">==</span> <span class="nx">answers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">correct</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+
+</code></pre></div></div>
+
+<p>This was a working sample of code. I used this to try to test this, and to design the program, with the ultimate goal of making an theoretically infinite quiz that got questions, answers, and correct answers, from a list.</p>
+
+<p>The variables (lists) I used are an example of data abstraction. My goal was to create multiple lists that can be fed to the program.</p>
+
+<p>However, I later hit a road block. I put the working blocks of code in a for loop, but it did not iterate through. For some reason, the onEvent function does not make the for loop iterate through.</p>
+
+<p>I tried to move the events outside the loop, but those did not iterate through as well.</p>
+
+<p>I’m going to redesign this with a while loop, that changes after onEvent is clicked.</p>
+
+<p>However, this was too tedious. I collapsed this down into a function.</p>
+
+<p><code class="language-plaintext highlighter-rouge">
+function checkAnswer(b) {
+  if (getText(b) == answers[i]) {
+      console.log("correct");
+      grade++;
+      i++;
+    }
+    else {
+      console.log("incorrect");
+      i++;
+    }
+  setQuestions();</code></p>
+
+<p>The setQuestions function does exactly that, set questions according to the list,using the variable i pick from the lists. Whenever a button is clicked, this function is called and the answer is checked, the variable grade is changed, and the new questions are set. This is an example of procedural abstraction. The question setting is one function, and the answer checking is another.</p>

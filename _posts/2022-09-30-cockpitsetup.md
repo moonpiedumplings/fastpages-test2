@@ -11,7 +11,7 @@ tags: [aws, ec2, docker, linux]
 
 Amazon lets us have free servers via EC2. The typical way to manage servers is either by sshing in, or using the cloud shell that Amazon (and Oracle) give. However, there are alternative ways to manage servers. One extremely popular example is pteradactyl, a webpage based gui to manage game (usually minecraft). It lets you download game servers as docker containers, run them, stop them, and maybe manage some basic settings, All the things a casual who just wants video games may need. But when I created a free Oracle server, I wanted something more. By this point, I was an experienced linux user, and I wanted more advanced features. So I searched for a more advanced server management tool, like people use on real servers, and I found cockpit. 
 
-Cockpit comes with many benefits. The two things I really like however, are that it's terminal is not laggy at all, unlike the amazon ec2 cloud terminal, and it also offers a gui to manage docker servers. 
+Cockpit comes with many benefits. The two things I really like however, are that it's terminal is not laggy at all, unlike the amazon ec2 cloud terminal, and it also offers a gui to manage docker containers. 
 
 # The installation process
 

@@ -533,12 +533,16 @@ window.onload = wrap_img;
 
 <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
     <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
-    <span class="n">q</span> <span class="o">=</span>  <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you want another item? yes/no&quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">q</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">menu</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+        <span class="n">q</span> <span class="o">=</span>  <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you want another item? yes/no&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">q</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That is not a valid item!&quot;</span><span class="p">)</span>
     
 <span class="c1">#code should add the price of the menu items selected by the user </span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;$&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">total</span><span class="p">))</span>
@@ -558,7 +562,7 @@ window.onload = wrap_img;
 burger  $3.99
 fries  $1.99
 drink  $0.99
-$1.99
+$3.99
 </pre>
 </div>
 </div>

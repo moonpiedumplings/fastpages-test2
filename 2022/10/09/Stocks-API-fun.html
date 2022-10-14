@@ -150,7 +150,7 @@ window.onload = wrap_img;
 
 <span class="c1"># API key for the stocks</span>
 
-<span class="n">client</span> <span class="o">=</span> <span class="n">RESTClient</span><span class="p">(</span><span class="s2">&quot;4smt0M_ePY6rylHRcP5t3v3pa7WS_pB9&quot;</span><span class="p">)</span> <span class="c1"># api key in quotes</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">RESTClient</span><span class="p">(</span><span class="s2">&quot;4smt0M_ePY6rylHRcP5t3v3pa7WS_pB9&quot;</span><span class="p">)</span> <span class="c1"># api key in quotes </span>
 </pre></div>
 
     </div>
@@ -168,7 +168,9 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">str</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What stock would you like?&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_daily_open_close_agg</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">)</span>
+<span class="n">date</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Date? (Please formate it in as YYYY-MM-DD&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_daily_open_close_agg</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span>
 
 
 <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -188,10 +190,10 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>DailyOpenCloseAgg(after_hours=178.36, close=178.44, from_=&#39;2022-04-04&#39;, high=178.49, low=174.44, open=174.57, pre_market=174.18, status=&#39;OK&#39;, symbol=&#39;AAPL&#39;, volume=76545983.0, otc=None)
+<pre>2022-10-10
+DailyOpenCloseAgg(after_hours=140.92, close=140.42, from_=&#39;2022-10-10&#39;, high=141.89, low=138.5729, open=140.42, pre_market=139.95, status=&#39;OK&#39;, symbol=&#39;AAPL&#39;, volume=74899002.0, otc=None)
 AAPL
-174.57
-str(data.open)
+140.42
 </pre>
 </div>
 </div>
@@ -211,7 +213,7 @@ str(data.open)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">polygon</span> <span class="kn">import</span> <span class="n">RESTClient</span>
 
-<span class="n">aggs</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_aggs</span><span class="p">(</span><span class="s2">&quot;AAPL&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">)</span>
+<span class="n">aggs</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_aggs</span><span class="p">(</span><span class="s2">&quot;AAPL&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-10-12&quot;</span><span class="p">,</span> <span class="s2">&quot;2022-04-04&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">aggs</span><span class="p">)</span>
 </pre></div>
 
